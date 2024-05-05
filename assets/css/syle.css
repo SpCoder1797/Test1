@@ -1,3 +1,60 @@
-h1{
-    color: red;
+/*
+این فقط یک تست بود از  یوتیل استفاده کردم  
+.w_100{
+    width: 100% !important;
+} */
+
+@media(min-width:600px){
+    .top-navbar{
+        box-shadow: 0 0 50px gray !important;
+    }
+
+    #top-actions-section{
+        display: flex !important;
+        align-items: center !important;
+    }
 }
+
+
+.users-list-item.active .users-list-arrow-icon{
+    transform: rotate(180deg);
+}
+
+.users-list-item.active , .users-list-item.active .collapsible-header{
+    background-color: rgba(209, 200, 215, 0.566);
+}
+
+table.highlight > tbody > tr:hover {
+    background-color: rgba(133, 107, 152, 0.278);
+  }
+
+  .container{
+    width: 100% !important;
+  }
+
+  .add-user-modal-back{
+        position: fixed;
+        width: 100%;
+        height: 100vh;
+        background-color: rgba(0, 0, 0, 0.211);
+        top: 0;
+        left: 0;
+        z-index: 999;
+    }
+    .add-user-modal{
+        position: fixed;
+        height: 70vh;
+        background-color: white;
+        bottom: 0;
+        z-index: 1000;
+        left: 0;
+        right: 0;
+        bottom: -70vh;
+
+    }
+    .add-user-modal.show{
+       bottom: 0;
+       box-shadow: rgb(163, 144, 176);
+
+    }
+
